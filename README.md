@@ -22,12 +22,10 @@ Currently, the Curseborne system is not available through Foundry VTT’s packag
 3. Click **Install System** and paste the manifest URL:
 
    ```
-   https://github.com/Ethaks/curseborne/releases/latest/download/system.json
+   https://github.com/chiptotlechris/CurseborneFVT/blob/main/system.json
    ```
 
 4. Confirm the installation and wait for the process to complete.
 5. Once installed, create a new world and select **Curseborne** as the game system.
 
-## Future Updates
 
-For support or inquiries, please contact `ethaks` in FoundryVTT's or Onyx Path Publishing's Discord communities.
