@@ -1,0 +1,50 @@
+{{!--
+SPDX-FileCopyrightText: © 2025 Ethaks <ethaks@pm.me>
+
+SPDX-License-Identifier: LicenseRef-CopyrightEthaks
+--}}
+
+<section class="curseborne curseborne-tooltip item-tooltip content flexcol">
+	<section class="tooltip-header flexrow">
+		{{#if img}}
+			<img class="item-image" src="{{img}}" alt="{{title}}" width="44" height="44">
+		{{/if}}
+		<div class="name-stacked caps">
+			<h5 class="title flexrow">{{title}}</h5>
+			<h6 class="subtitle flexrow">{{{subtitle}}}</h6>
+		</div>
+	</section>
+
+	{{! Details }}
+	{{#if details}}
+		<fieldset class="details">
+			<legend class="header">
+				<span>{{localize "CURSEBORNE.Item.Tabs.details"}}</span>
+			</legend>
+			{{#each details}}
+				<div class="detail flexrow {{cls}}">
+					{{#if label}}
+						<span class="label">{{localize label}}</span>
+					{{/if}}
+					{{#if valueElement}}
+						{{{valueElement}}}
+					{{else}}
+						<span class="value flexrow">
+							{{value}}
+						</span>
+					{{/if}}
+				</div>
+			{{/each}}
+		</fieldset>
+	{{/if}}
+
+	{{! Enriched Texts}}
+	{{#each enriched}}
+		<fieldset class="enriched-field {{classes}}">
+			<legend>
+				<span>{{label}}</span>
+			</legend>
+			<div class="enriched">{{{enriched}}}</div>
+		</fieldset>
+	{{/each}}
+</section>

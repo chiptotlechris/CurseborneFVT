@@ -1,0 +1,15 @@
+{{!--
+SPDX-FileCopyrightText: © 2025 Ethaks <ethaks@pm.me>
+
+SPDX-License-Identifier: LicenseRef-CopyrightEthaks
+--}}
+
+<section class="tab standard-form {{tab.cssClass}}" data-group="primary" data-tab="skill">
+	{{! Advanced Fields }}
+	<fieldset class="advanced">
+		<legend>{{localize "CURSEBORNE.Advanced"}}</legend>
+		{{
+			curse-formGroup systemFields.identifier formGroupOptions value=identifier.value placeholder=identifier.placeholder
+		}}
+	</fieldset>
+</section>

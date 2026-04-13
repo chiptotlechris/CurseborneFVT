@@ -1,0 +1,24 @@
+/*
+ * SPDX-FileCopyrightText: © 2025 Ethaks <ethaks@pm.me>
+ *
+ * SPDX-License-Identifier: LicenseRef-CopyrightEthaks
+ */
+
+.application.curseborne.text-editor {
+	&:not(.minimizing, .minimized, .maximizing) {
+		min-height: 200px;
+		min-width: 475px;
+	}
+
+	.window-content:has(> div.enriched) {
+		padding-right: 1rem;
+	}
+
+	div.enriched {
+		user-select: text;
+	}
+
+	prose-mirror {
+		height: 100%;
+	}
+}

@@ -1,0 +1,84 @@
+// SPDX-FileCopyrightText: © 2025 Ethaks <ethaks@pm.me>
+//
+// SPDX-License-Identifier: CC0-1.0
+
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"formatter": {
+		"lineWidth": 100
+	},
+	"assist": { "actions": { "source": { "organizeImports": "on", "recommended": true } } },
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true,
+		"defaultBranch": "main"
+	},
+	"css": {
+		"formatter": {
+			"enabled": true
+		}
+	},
+	"files": {
+		"includes": ["**/*.mjs", "**/*.d.ts", "**/*.json", "**/*.jsonc", "**/*.css"]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noStaticOnlyClass": "off",
+				"noThisInStatic": "off"
+			},
+			"performance": {
+				"noDelete": "off"
+			},
+			"correctness": {
+				"noUndeclaredVariables": "error",
+				"noUnreachable": "error",
+				"noUnreachableSuper": "error",
+				"noUnusedVariables": "info",
+				"noUnusedImports": "info",
+				"noInvalidBuiltinInstantiation": "error"
+			},
+			"style": { "useBlockStatements": "off", "noParameterAssign": "off" },
+			"suspicious": {
+				"noCompareNegZero": "error",
+				"noDebugger": "error",
+				"noFallthroughSwitchClause": "warn",
+				"noFunctionAssign": "error",
+				"noRedeclare": "error"
+			}
+		},
+		"includes": ["**", "!**/*.d.ts"]
+	},
+	"overrides": [
+		{
+			"includes": ["**/tools/**/*.mjs"],
+			"javascript": {
+				"globals": ["Bun"]
+			}
+		},
+		{
+			"includes": ["**/module/**/*.mjs"],
+			"javascript": {
+				"globals": [
+					"Handlebars",
+					"Hooks",
+					"CONFIG",
+					"CONST",
+					"curseborne",
+					"foundry",
+					"Draggable",
+					"$",
+					"ui",
+					"canvas",
+					"game",
+					"Tour",
+					"getDocumentClass",
+					"gsap"
+				]
+			}
+		}
+	]
+}
