@@ -73,7 +73,7 @@
 	"packFolders": [],
 	"socket": true,
 	"manifest": "https://raw.githubusercontent.com/chiptotlechris/CurseborneFVT/main/system.json",
-	"download": "#DOWNLOAD",
+	"download": "#https://github.com/<owner>/<repo>/releases/download/v1/source code.zip",
 	"grid": {
 		"type": 1,
 		"distance": 5,
