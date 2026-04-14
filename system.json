@@ -4,8 +4,8 @@
 	"description": "The Curseborne system for FoundryVTT",
 	"authors": [
 		{
-			"name": "Ethaks",
-			"discord": "ethaks"
+			"name": "Chris",
+			"discord": "Chris"
 		}
 	],
 	"documentTypes": {
@@ -42,10 +42,9 @@
 			"extensions": ["css", "hbs", "json", "js"]
 		}
 	},
-	"url": "https://github.com/Ethaks/curseborne",
-	"license": "LICENSE.txt",
+	"url": "https://github.com/chiptotlechris/CurseborneFVT",
 	"readme": "README.md",
-	"bugs": "https://github.com/Ethaks/curseborne/issues",
+	"bugs": "https://github.com/chiptotlechris/CurseborneFVT/issues",
 	"changelog": "CHANGELOG.md",
 	"media": [
 		{
@@ -73,7 +72,7 @@
 	"packs": [],
 	"packFolders": [],
 	"socket": true,
-	"manifest": "https://github.com/Ethaks/curseborne/releases/latest/download/system.json",
+	"manifest": "https://github.com/chiptotlechris/CurseborneFVT/blob/main/system.json",
 	"download": "#DOWNLOAD",
 	"grid": {
 		"type": 1,
