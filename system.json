@@ -72,7 +72,7 @@
 	"packs": [],
 	"packFolders": [],
 	"socket": true,
-	"manifest": "https://github.com/chiptotlechris/CurseborneFVT/blob/main/system.json",
+	"manifest": "https://raw.githubusercontent.com/chiptotlechris/CurseborneFVT/main/system.json",
 	"download": "#DOWNLOAD",
 	"grid": {
 		"type": 1,
